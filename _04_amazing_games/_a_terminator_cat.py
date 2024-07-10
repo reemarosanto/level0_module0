@@ -54,8 +54,8 @@ def key_pressed():
     right_eye.draw()
 
 if __name__ == '__main__':
+
     window = turtle.Screen()
-    
     # 1. Find an image of a cat with BIG eyes OR use one of the 2 images provided
     #    a. Find an image using google to search. The image must be a .gif file
     #    b. Right click on the image and select 'Save image As'
@@ -73,9 +73,9 @@ if __name__ == '__main__':
     my_turtle.color('red')
     my_turtle.pencolor('red')
     # 5. Set the turtle width to 0 so no outlines are drawn
-    my_turtle.width = 0
+    my_turtle.width(0)
     # 6. Set the turtle speed to 0 (fastest)
-    my_turtle.speed = 0
+    my_turtle.speed(0)
     # 7. Run the program and click on one of the cat's eyes. 
     #    The x,y position of the eye will be printed at the bottom of your
     #    processing window.
@@ -88,12 +88,10 @@ if __name__ == '__main__':
     #    left_eye  = Eye(eye=my_turtle, x=-34, y=11, radius=30)
     #    right_eye = Eye(eye=my_turtle, x=40, y=-5, radius=30)
     left_eye = Eye(eye=my_turtle, x=-51, y=69, radius=30)
-    right_eye = Eye(eye=my_turtle, x=-1, y=-68, radius=30 )
+    right_eye = Eye(eye=my_turtle, x=-1, y=-68, radius=30)
     # 9. Call the .draw() method on BOTH eye variables
-
     left_eye.draw()
     right_eye.draw()
-
 # ===================== DO NOT EDIT THE CODE BELOW ============================
     window.onclick(screen_clicked)
     window.onkeypress(key_pressed, 'space')
